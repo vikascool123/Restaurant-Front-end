@@ -1,0 +1,101 @@
+.bg{
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    background-image: url(./Assest/headerBg.jpg);
+    height: 100%;
+    /* padding-bottom: 100%; */
+    flex-direction: column;
+   
+    
+}
+
+.inside-content{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 32%;
+}
+
+.customList{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    font-weight: 900;
+    color: #b0926b;
+    background: 0 0;
+    font-family: roboto,sans-serif;
+    letter-spacing: 3px;
+      
+}
+
+.feature-row{
+    background: #efe7de;
+}
+
+.feature-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    padding: 10% 10% 10% 17%;
+}
+
+#slider-container-outer {
+	overflow: hidden;
+}
+
+#slider-container {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+/* CSS transition applied when translation of items happen */
+.slider-container-transition {
+	transition: transform 0.7s ease-in-out;
+}
+
+.slider-item {
+	/* width: 100%; */
+	flex-shrink: 0;
+    counter-increment:slider-item
+}
+
+.slider-item::before{
+    content: counter(slider-item);
+}
+
+.card1{
+    /* background-repeat: no-repeat; */
+    display: flex;
+    transition: transform .7s;
+   
+    /* padding: 10% 10% 10% 17%; */
+}
+
+.card1:hover{
+    transform: scale(1.1);  
+}
+
+
+.card2{
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 390px;
+    padding: 5% 2% 5% 2%;
+    justify-content: center;
+    background-color:white !important;
+   
+    /* padding: 10% 10% 10% 17%; */
+}
