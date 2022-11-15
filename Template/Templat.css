@@ -39,11 +39,9 @@
     background: #efe7de;
 }
 
-.feature-section{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
+
+
 
 .card{
     display: flex;
@@ -65,15 +63,7 @@
 	transition: transform 0.7s ease-in-out;
 }
 
-.slider-item {
-	/* width: 100%; */
-	flex-shrink: 0;
-    counter-increment:slider-item
-}
 
-.slider-item::before{
-    content: counter(slider-item);
-}
 
 .card1{
     /* background-repeat: no-repeat; */
@@ -99,3 +89,74 @@
    
     /* padding: 10% 10% 10% 17%; */
 }
+
+
+    .feature-section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .slider-item {
+        /* width: 100%; */
+        flex-shrink: 0;
+        counter-increment:slider-item
+    }
+    
+    .slider-item::before{
+        content: counter(slider-item);
+    }
+
+
+    @media only screen 
+    and (max-width: 400px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        .tab{
+            display: none;
+        }
+
+        .Large{
+            display: none;
+        }
+
+    }
+
+
+
+    @media screen and (min-width: 1008px) 
+    and (max-height: 1366px)  {
+       
+        .tab{
+            display: none;
+        }
+
+        .phone{
+            display: none;
+        }
+       
+    }
+
+    @media screen and (max-width:1007px) {
+        .Large{
+            display: none;
+        }
+    
+        .phone{
+            display: none;
+        }
+        
+    }
+
+   
+
+   
+
+    /* @media screen and (min-width:1007px) {
+        .tab{
+            display:none;
+        }
+        .Large{
+            display: flex;
+        }
+    } */
